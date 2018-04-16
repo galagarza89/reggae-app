@@ -1,0 +1,225 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.css";
+
+
+/***********************
+General
+***********************/
+
+body, html {
+	margin: 0;
+	height: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #808080;
+}
+
+h2 {
+	margin-top: 50px;
+	font-size: 2.5em;
+}
+/***********************
+Home Page
+***********************/
+
+.bg-img {
+  background: url('../homeBackground.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.homePageContainer {
+	padding-top: 100px;
+}
+
+.jumbotron {
+   background-color: rgb(172, 173, 175);
+   background-color: rgba(255, 255, 255, 0.4); 
+   width: 70%;
+   margin: 0 auto; 
+}
+
+footer {
+	bottom: 0;
+	margin-top: 175px;
+	width: 100%;
+}
+
+footer p {
+	color: #FFF;
+}
+
+footer a:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+footer a, a:visited {
+  	text-decoration: none;
+  	color: #FFF;
+}
+
+/***********************
+Navigation
+***********************/
+.navbar {
+	background-color: #000;	
+}
+
+.navbar a {
+	color: #FFF;	
+}
+
+.navbar-nav li a {
+	color: #FFF;
+}
+
+/***********************
+Artists Page
+***********************/
+
+.row {
+	width: 95%;
+	margin: 10px auto;
+}
+
+.artistDiv {
+	margin: 10px auto;
+}
+
+.indArtist {
+	background-color: #f2f1e3;
+	padding: 0px;
+}
+
+.indArtist a {
+	text-decoration: none;
+	color: #000;
+}
+
+.indArtist img {
+	width: 100%;
+}
+
+.indArtist h4 {
+	padding: 5px;
+}
+
+/***********************
+Ind Artist Page
+***********************/
+
+.back-button {
+	margin: 0 25px;
+	font-size: 18px;
+}
+
+.artistContent {
+	margin: 50px auto;
+}
+
+.artistContent img {
+	width: 100%;
+}
+
+.artistContent a {
+  color: #000;
+  text-decoration: none;
+}
+
+.artistContent p span:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.artistContent h3 {
+	margin-top: 30px;
+}
+
+.artistContent h4 {
+	margin-top: 10px;
+}
+
+.socialMediaLinks a {
+	padding: 0;
+	margin: 0 auto;
+}
+
+
+/***********************
+Add Artist
+***********************/
+
+.addArtistDiv {
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+form {
+	padding-top: 10px;
+}
+
+.col-form-label {
+	font-size: 20px;
+}
+
+.addSubmit {
+	margin-right: 3%;
+}
+
+textarea {
+	resize: none;
+}
+
+/***********************
+Media Queries
+***********************/
+
+@media only screen and (min-width: 768px) {
+
+    .indArtist img {
+    	height: 260px;
+    }
+
+    .back-button {
+		margin: 0 35px;
+		font-size: 20px;
+	}
+
+}
+
+@media (min-width: 992px) {
+
+    .back-button {
+		margin: 0 40px;
+	}
+
+    .artistContent h3 {
+		margin-top: 0px;
+	}
+
+	.artistContent img {
+		max-height: 332px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+

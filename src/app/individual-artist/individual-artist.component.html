@@ -1,0 +1,62 @@
+
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/">Reggae Culture <i class="fa fa-music"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+            <a class="nav-link" routerLink="/artists">Artists <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="artistContent container">
+	<div class="back-button">
+		<a routerLink="/artists"><i class="fa fa-arrow-circle-left"> Back</i></a>
+	</div>
+    <div class="row">
+        <div class="col-xs-12 col-lg-6">
+            <img class="img-responsive" src="{{artist.image_url}}">                    
+        </div>
+        <div class="col-xs-12 col-lg-6">
+            <h3>{{artist.name}}</h3>
+            <p>{{artist.bio}} <span><a href="{{artist.info_url}}">Read more...</a></span></p>
+            <div class="row">
+            	<div class="col-xs-12 col-sm-5">
+	            	<h4 class="text-center">Artist Links:</h4>
+	        	</div>
+	        	<div class="col-xs-12 col-sm-7">
+		            <div class="row socialMediaLinks">
+		                <a href="{{artist.website_url}}"><div class="col-xs-3">
+		                    <i class="fa fa-home fa-2x"></i>       
+		                </div></a>
+		                <a href="{{artist.instagram_url}}"><div class="col-xs-3">
+		                    <i class="fa fa-instagram fa-2x"></i>    
+		                </div></a>
+		                <a href="{{artist.facebook_url}}"><div class="col-xs-3">
+		                    <i class="fa fa-facebook fa-2x"></i>         
+		                </div></a>
+		                <a href="{{artist.twitter_url}}"><div class="col-xs-3">
+		                    <i class="fa fa-twitter fa-2x"></i> 
+		                </div></a>             
+		            </div> <!-- end row for social links -->
+	        	</div>
+        	</div>
+        </div> <!-- end artist about column -->
+    </div> <!-- end -->
+</div> <!-- end artistContent container -->
+
+
+<footer class="text-center">
+  <div>
+    <a href="https://twitter.com/reggaeculture_?lang=en" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/reggaeculture_/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+  </div>
+  <div>
+  <p>Reggae Culture &copy; 2018</p>   
+  </div>
+</footer>
