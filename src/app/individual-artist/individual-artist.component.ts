@@ -16,7 +16,16 @@ export class IndividualArtistComponent implements OnInit {
 	constructor(private route: ActivatedRoute, private http: Http) { }
 
 
-	artist = [];
+	  artist = [];
+    private _id: any;
+    private name: any;
+    private image_url: any;
+    private website_url: any;
+    private twitter_url: any;
+    private facebook_url: any;
+    private instagram_url: any;
+    private bio: any;
+    private info_url: any;
 	
 	ngOnInit() {
 		this.routeSub = this.route.params.subscribe(params => {
